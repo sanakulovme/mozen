@@ -1,0 +1,238 @@
+/** (styles.css [main css file])
+*
+** By: Abbos Sanakulov [©];
+*
+**********************************
+**********************************
+*
+** abbossana@gmail.com;
+** github.com/sanakulovme
+** t.me/abbosjec
+** instagram.com/abbosjec
+**
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+ :root {
+    --min-size: 2500px;
+    --planet: 100px;
+
+    /* color's  */
+    --dark: #000;
+    --white: #fff;
+
+    /* animation's  */
+    --neptune: rotate 60190s linear infinite;
+    --earth: rotate 365.24s linear infinite;
+    --urans: rotate 30687s linear infinite;
+    --saturn: rotate 10759s linear infinite;
+    --jupiter: rotate 4333s linear infinite;
+    --mars: rotate 687s linear infinite;
+    --venus: rotate 225s linear infinite;
+    --mercury: rotate 88s linear infinite;
+}
+
+body{
+    background: var(--dark);
+}
+
+.main {
+    overflow: hidden;
+}
+
+#main.with-border .bd{
+    border: 1px solid #111;
+}
+
+.r {
+    border-radius: 50%;
+}
+
+.bd {
+    color: var(--white);
+}
+
+.df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pa {
+    position: absolute;
+}
+
+.l0 {
+    left: -50px;
+}
+
+/* Neptune */
+.n1 {
+    animation: var(--neptune);
+}
+
+/* Urans */
+.n2 {
+    animation: var(--urans);
+}
+
+/* Saturn */
+.n3 {
+    animation: var(--saturn);
+}
+
+/* Jupiter */
+.n4 {
+    animation: var(--jupiter);
+}
+
+/* Mars */
+.n5 {
+    animation: var(--mars);
+}
+
+/* Earth */
+.n6 {
+    animation: var(--earth);
+}
+
+/* Venus */
+.n7 {
+    animation: var(--venus);
+}
+
+/* Mercury */
+.n8 {
+    animation: var(--mercury);
+}
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#controll{
+    position: fixed;
+    top: 50px;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 9999;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.settings-btn{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+#modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    transform: scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.open{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1.0);
+}
+
+.modal-content{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+
+.modal-content ul li{
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.close-btn{
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.checkbox{
+    display: inline-block;
+    width: 61px;
+    height: 31px;
+    border-radius: 31px;
+    border: 1px solid #111;
+    transition: all 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.checkbox.open{
+    border-color: #fff;
+}
+
+.checkbox.open span{
+    transform: translateX(30px);
+    border-color: #fff;
+}
+
+.checkbox span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid #111;
+    transition: all 0.3s;
+}
+
+/**
+ * SCROLL BAR
+ */
+
+ ::-webkit-scrollbar {
+    width: .4rem;
+    height: .4rem;
+    border-radius: .4rem;
+    background: var(--dark);
+}
+
+ ::-webkit-scrollbar-thumb {
+    width: 0.4rem;
+    border-radius: .4rem;
+    background: #555;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}

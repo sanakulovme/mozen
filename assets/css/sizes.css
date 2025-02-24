@@ -1,0 +1,76 @@
+/* 
+,
+,
+,
+,
+,
+,
+,
+ */
+
+
+/* worlds Vecrots (Radius) Sizes */
+
+.main,
+body {
+    min-width: calc(var(--min-size) + 200px);
+    min-height: calc(var(--min-size) + 200px);
+}
+
+.n1 {
+    width: var(--min-size);
+    height: var(--min-size);
+}
+
+.n2 {
+    width: calc((var(--min-size) - 300px));
+    height: calc((var(--min-size) - 300px));
+}
+
+.n3 {
+    width: calc(var(--min-size) - 600px);
+    height: calc(var(--min-size) - 600px);
+}
+
+.n4 {
+    width: calc(var(--min-size) - 900px);
+    height: calc(var(--min-size) - 900px);
+}
+
+.n5 {
+    width: calc(var(--min-size) - 1200px);
+    height: calc(var(--min-size) - 1200px);
+}
+
+.n6 {
+    width: calc(var(--min-size) - 1500px);
+    height: calc(var(--min-size) - 1500px);
+}
+
+.n7 {
+    width: calc(var(--min-size) - 1800px);
+    height: calc(var(--min-size) - 1800px);
+}
+
+.n8 {
+    width: calc(var(--min-size) - 2100px);
+    height: calc(var(--min-size) - 2100px);
+}
+
+.sn {
+    width: calc(var(--min-size) - 2400px);
+    height: calc(var(--min-size) - 2400px);
+    background: #ff0;
+    box-shadow: 0 0 20px #ff0;
+}
+
+
+/* World (Planets Radius) sizes */
+
+.p-size {
+    width: var(--planet);
+    height: var(--planet);
+    cursor: pointer;
+    border: 0.5px solid rgba(85, 85, 80, 0.788);
+    background: #111;
+}
